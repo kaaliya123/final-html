@@ -1,1 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Desi Chicken | A1 Jhatka Mutton Shop Kanwali Road</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        .map-container iframe { width: 100%; height: 100%; min-height: 450px; border: 0; }
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(34, 197, 94, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+        .whatsapp-btn { animation: pulse-green 2s infinite; }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
 
+    <a href="https://wa.me/917037028811" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-[100] bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 transition transform hover:scale-110 whatsapp-btn">
+        <i class="fab fa-whatsapp text-4xl"></i>
+    </a>
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold text-red-600 uppercase">A1 JHATKA CHICKEN SHOP</h1>
+            <div class="hidden md:flex space-x-6 font-medium">
+                <a href="#rates" class="hover:text-red-600 transition">Rates</a>
+                <a href="#order" class="hover:text-red-600 transition">Order</a>
+                <a href="tel:7037028811" class="bg-red-100 text-red-600 px-3 py-1 rounded-lg font-bold">7037028811</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative bg-gray-900 h-[500px] flex items-center text-center text-white px-4">
+        <div class="absolute inset-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1587593810167-a84920ea0781?auto=format&fit=crop&q=80')] bg-cover bg-center"></div>
+        <div class="container mx-auto relative z-10">
+            <h2 class="text-4xl md:text-7xl font-extrabold mb-4 uppercase tracking-tight leading-tight">Fresh Desi Chicken <br>& Chicken Item</h2>
+            <p class="text-xl font-bold text-yellow-400 bg-black/40 inline-block px-4 py-2 rounded-lg">🚀 FREE DELIVERY WITHIN 3 KM OF KANWALI ROAD!</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mt-8">
+                <a href="tel:+917037028811" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full font-bold shadow-xl transition transform hover:scale-105">
+                    <i class="fas fa-phone-alt mr-2"></i> Call: 9997862938
+                </a>
+                <a href="#order" class="bg-white text-gray-900 px-8 py-4 rounded-full font-bold shadow-xl hover:bg-gray-100 transition">
+                    Place Order Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="rates" class="py-16 bg-red-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 uppercase">Today's Fresh Rates</h2>
+            <p class="text-red-600 font-bold mt-2" id="current-date">Prices updated: Loading...</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mt-10">
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-b-4 border-red-600">
+                    <h3 class="font-bold text-gray-600 uppercase">Desi Chicken</h3>
+                    <div class="text-4xl font-black text-red-600 my-2">₹600 <span class="text-sm text-gray-400">/kg</span></div>
+                    <p class="text-xs text-green-600 font-bold uppercase">● Fresh Daily</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-b-4 border-red-600 scale-105 relative z-10">
+                    <h3 class="font-bold text-gray-600 uppercase">Chicken boneless(Breast/thigh)</h3>
+                    <div class="text-4xl font-black text-red-600 my-2">₹300 <span class="text-sm text-gray-400">/kg</span></div>
+                    <p class="text-xs text-green-600 font-bold uppercase">● Premium Quality</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-b-4 border-red-600">
+                    <h3 class="font-bold text-gray-600 uppercase"> Chicken Curry Cut</h3>
+                    <div class="text-4xl font-black text-red-600 my-2">₹220 <span class="text-sm text-gray-400">/kg</span></div>
+                    <p class="text-xs text-green-600 font-bold uppercase">● Ready to Cook</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col lg:flex-row border border-gray-100">
+                <div class="lg:w-1/2 map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.423528224538!2d78.024845!3d30.310468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3909298cdb9d5acd%3A0x48d3fbfe023bc3fc!2z4KSPLTEg4KS4KSf4KSV4KS-IOCkruCkn-CkqCDgpLbgpY_gpKo!5e0!3m2!1shi!2sin!4v1705760000000!5m2!1shi!2sin" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                
+                <div class="lg:w-1/2 p-8 md:p-12 flex flex-col justify-center bg-gray-50">
+                    <div id="form-container">
+                        <h4 class="text-3xl font-bold text-gray-800 uppercase mb-4">Quick Order</h4>
+                        <p class="text-sm text-green-600 font-bold mb-6 italic"><i class="fas fa-truck mr-2"></i> Free Delivery Within 3km of Kanwali Road</p>
+                        
+                        <div class="space-y-4">
+                            <input type="text" id="custName" placeholder="Your Name" class="w-full p-4 rounded-xl border border-gray-300 outline-none focus:ring-2 focus:ring-red-500 shadow-sm">
+                            <textarea id="custOrder" rows="3" placeholder="Order Details (e.g. 1kg Mutton)" class="w-full p-4 rounded-xl border border-gray-300 outline-none focus:ring-2 focus:ring-red-500 shadow-sm"></textarea>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <button onclick="sendWhatsApp('917037028811')" class="bg-green-600 text-white font-bold py-4 rounded-xl hover:bg-green-700 transition flex items-center justify-center gap-2 shadow-lg">
+                                    <i class="fab fa-whatsapp text-xl"></i> Order 1
+                                </button>
+                                <button onclick="sendWhatsApp('919997862938')" class="bg-green-700 text-white font-bold py-4 rounded-xl hover:bg-green-800 transition flex items-center justify-center gap-2 shadow-lg">
+                                    <i class="fab fa-whatsapp text-xl"></i> Order 2
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="thank-you" class="hidden text-center p-8">
+                        <div class="text-green-500 text-6xl mb-4"><i class="fas fa-check-circle"></i></div>
+                        <h4 class="text-2xl font-bold text-gray-800 uppercase">Order Initiated!</h4>
+                        <p class="text-gray-600 mt-2">Please complete the message on WhatsApp. We'll confirm your delivery shortly.</p>
+                        <button onclick="location.reload()" class="mt-6 text-red-600 font-bold underline">Send another order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12 text-center">
+        <h3 class="text-red-500 font-bold mb-4 tracking-widest uppercase">A1 Jhatka Mutton & Fresh Chicken</h3>
+        <p class="opacity-40 text-[10px] uppercase tracking-tighter">26, Kanwali Road, Dehradun • Secured with SSL • 100% Hygienic</p>
+    </footer>
+
+    <script>
+        function updateDate() {
+            const dateElement = document.getElementById('current-date');
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            const today = new Date().toLocaleDateString('en-IN', options);
+            dateElement.innerText = "Prices updated: " + today;
+        }
+        updateDate();
+
+        function sendWhatsApp(targetNumber) {
+            const name = document.getElementById('custName').value.trim();
+            const order = document.getElementById('custOrder').value.trim();
+            
+            if(!name || !order) {
+                alert("Please enter your name and order details.");
+                return;
+            }
+            
+            const message = `*NEW ORDER FROM WEBSITE*%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Order:* ${encodeURIComponent(order)}%0A%0A_Eligible for Free 3km Delivery from Kanwali Road_`;
+            const whatsappUrl = `https://wa.me/${targetNumber}?text=${message}`;
+            
+            window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+            document.getElementById('form-container').classList.add('hidden');
+            document.getElementById('thank-you').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
